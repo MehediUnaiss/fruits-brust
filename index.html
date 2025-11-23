@@ -83,11 +83,16 @@
           id="slide1"
           class="carousel-item relative w-full bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./images/banner1.png)] h-[60vh] bg-center bg-no-repeat flex items-center justify-center"
         >
+          <div
+            class="absolute top-6 right-6 bg-red-400 px-4 py-2 rounded-xl text-white"
+          >
+            <h6>Hot Deal!</h6>
+          </div>
           <!-- inner text -->
           <div
             class="flex flex-col justify-center items-center text-center space-y-4"
           >
-            <h1 class="text-7xl text-white font-bold">
+            <h1 class="text-2xl lg:text-7xl text-white font-bold">
               Exotic tastes at your <br />
               doorstep
             </h1>
@@ -107,13 +112,13 @@
         </div>
         <div
           id="slide2"
-          class="carousel-item relative w-full bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./images/banner2.png)] h-[60vh] bg-center bg-no-repeat flex items-center justify-center"
+          class="carousel-item relative w-full bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./images/banner2.png)] h-[60vh] bg-center bg-cover bg-no-repeat flex items-center justify-center"
         >
           <!-- inner text -->
           <div
             class="flex flex-col justify-center items-center text-center space-y-4"
           >
-            <h1 class="text-7xl text-white font-bold">
+            <h1 class="text-2xl lg:text-7xl text-white font-bold">
               Exotic tastes at your <br />
               doorstep
             </h1>
@@ -139,7 +144,7 @@
           <div
             class="flex flex-col justify-center items-center text-center space-y-4"
           >
-            <h1 class="text-7xl text-white font-bold">
+            <h1 class="text-2xl lg:text-7xl text-white font-bold">
               Exotic tastes at your <br />
               doorstep
             </h1>
@@ -165,7 +170,7 @@
           <div
             class="flex flex-col justify-center items-center text-center space-y-4"
           >
-            <h1 class="text-7xl text-white font-bold">
+            <h1 class="text-2xl lg:text-7xl text-white font-bold">
               Exotic tastes at your <br />
               doorstep
             </h1>
@@ -186,9 +191,9 @@
       </div>
       <!-- overlay section -->
       <div
-        class="h-[20vh] w-4/5 mx-auto bg-white rounded-lg -translate-y-24 shadow-lg"
+        class="hidden lg:flex justify-center gap-6 items-center h-[20vh] w-4/5 mx-auto bg-white rounded-lg -translate-y-16 shadow-lg"
       >
-        <div class="flex justify-evenly items-center h-full space-y-4">
+        <div class="flex justify-evenly items-center h-full space-x-16">
           <div class="flex flex-col justify-center items-center">
             <img src="./images/fruit1.png" alt="" />
             <h4 class="text-xl font-semibold">Strawberry</h4>
@@ -213,7 +218,452 @@
       </div>
     </div>
     <!-- main section -->
-    <main></main>
+    <main>
+      <section class="my-16 py-24 container lg:px-24 mx-auto px-8">
+        <!-- 1st -->
+        <div class="flex justify-between items-center">
+          <!-- text  -->
+          <div>
+            <h2 class="text-4xl font-bold mb-2">Deal of the day</h2>
+            <p class="w-2/3 text-lg opacity-70">
+              Contrary to popular belief, is not simply random text. It has
+              roots in a piece of classical Latin literature from 45 BC, making
+              it over 2000 years old.
+            </p>
+          </div>
+          <!-- count down -->
+          <div>
+            <div class="grid auto-cols-max grid-flow-col gap-5 text-center">
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value: 15" aria-live="polite" aria-label="15"
+                    >15</span
+                  >
+                </span>
+                days
+              </div>
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value: 10" aria-live="polite" aria-label="10"
+                    >10</span
+                  >
+                </span>
+                hours
+              </div>
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value: 24" aria-live="polite" aria-label="24"
+                    >24</span
+                  >
+                </span>
+                min
+              </div>
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value: 59" aria-live="polite" aria-label="59"
+                    >59</span
+                  >
+                </span>
+                sec
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 2nd -->
+        <div class="mt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <!-- card 1 -->
+          <div
+            class="border-2 border-gray-300 rounded-2xl flex flex-col space-y-4 items-center justify-center px-4 py-6"
+          >
+            <img src="./images/fruit6.png" alt="" />
+            <h6 class="font-bold text-2xl">12.90$ - 18.85$</h6>
+            <div class="divider w-3/4 mx-auto"></div>
+            <p class="text-base font-medium text-[#12121299]">Apples</p>
+            <!-- ratting -->
+            <div>
+              <div class="rating rating-lg rating-half">
+                <input type="radio" name="rating-11" class="rating-hidden" />
+                <input
+                  type="radio"
+                  name="rating-11"
+                  class="mask mask-star-2 mask-half-1 bg-yellow-500"
+                  aria-label="0.5 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-11"
+                  class="mask mask-star-2 mask-half-2 bg-yellow-500"
+                  aria-label="1 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-11"
+                  class="mask mask-star-2 mask-half-1 bg-yellow-500"
+                  aria-label="1.5 star"
+                  checked="checked"
+                />
+                <input
+                  type="radio"
+                  name="rating-11"
+                  class="mask mask-star-2 mask-half-2 bg-yellow-500"
+                  aria-label="2 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-11"
+                  class="mask mask-star-2 mask-half-1 bg-yellow-500"
+                  aria-label="2.5 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-11"
+                  class="mask mask-star-2 mask-half-2 bg-yellow-500"
+                  aria-label="3 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-11"
+                  class="mask mask-star-2 mask-half-1 bg-yellow-500"
+                  aria-label="3.5 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-11"
+                  class="mask mask-star-2 mask-half-2 bg-yellow-500"
+                  aria-label="4 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-11"
+                  class="mask mask-star-2 mask-half-1 bg-yellow-500"
+                  aria-label="4.5 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-11"
+                  class="mask mask-star-2 mask-half-2 bg-yellow-500"
+                  aria-label="5 star"
+                />
+              </div>
+            </div>
+            <button class="btn btn-ghost">Details</button>
+          </div>
+          <!-- card 2 -->
+          <div
+            class="border-2 border-gray-300 rounded-2xl flex flex-col space-y-4 items-center justify-center px-4 py-6"
+          >
+            <img src="./images/fruit7.png" alt="" />
+            <h6 class="font-bold text-2xl">12.90$ - 18.85$</h6>
+            <div class="divider w-3/4 mx-auto"></div>
+            <p class="text-base font-medium text-[#12121299]">Orange</p>
+            <!-- ratting -->
+            <div>
+              <div class="rating rating-lg rating-half">
+                <input type="radio" name="rating-11" class="rating-hidden" />
+                <input
+                  type="radio"
+                  name="rating-12"
+                  class="mask mask-star-2 mask-half-1 bg-yellow-500"
+                  aria-label="0.5 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-12"
+                  class="mask mask-star-2 mask-half-2 bg-yellow-500"
+                  aria-label="1 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-12"
+                  class="mask mask-star-2 mask-half-1 bg-yellow-500"
+                  aria-label="1.5 star"
+                  checked="checked"
+                />
+                <input
+                  type="radio"
+                  name="rating-12"
+                  class="mask mask-star-2 mask-half-2 bg-yellow-500"
+                  aria-label="2 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-12"
+                  class="mask mask-star-2 mask-half-1 bg-yellow-500"
+                  aria-label="2.5 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-12"
+                  class="mask mask-star-2 mask-half-2 bg-yellow-500"
+                  aria-label="3 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-12"
+                  class="mask mask-star-2 mask-half-1 bg-yellow-500"
+                  aria-label="3.5 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-12"
+                  class="mask mask-star-2 mask-half-2 bg-yellow-500"
+                  aria-label="4 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-12"
+                  class="mask mask-star-2 mask-half-1 bg-yellow-500"
+                  aria-label="4.5 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-12"
+                  class="mask mask-star-2 mask-half-2 bg-yellow-500"
+                  aria-label="5 star"
+                />
+              </div>
+            </div>
+            <button class="btn btn-ghost">Details</button>
+          </div>
+          <!-- card 3 -->
+          <div
+            class="border-2 border-gray-300 rounded-2xl flex flex-col space-y-4 items-center justify-center px-4 py-6"
+          >
+            <img src="./images/fruit8.png" alt="" />
+            <h6 class="font-bold text-2xl">12.90$ - 18.85$</h6>
+            <div class="divider w-3/4 mx-auto"></div>
+            <p class="text-base font-medium text-[#12121299]">Red Dragon</p>
+            <!-- ratting -->
+            <div>
+              <div class="rating rating-lg rating-half">
+                <input type="radio" name="rating-11" class="rating-hidden" />
+                <input
+                  type="radio"
+                  name="rating-13"
+                  class="mask mask-star-2 mask-half-1 bg-yellow-500"
+                  aria-label="0.5 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-13"
+                  class="mask mask-star-2 mask-half-2 bg-yellow-500"
+                  aria-label="1 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-13"
+                  class="mask mask-star-2 mask-half-1 bg-yellow-500"
+                  aria-label="1.5 star"
+                  checked="checked"
+                />
+                <input
+                  type="radio"
+                  name="rating-13"
+                  class="mask mask-star-2 mask-half-2 bg-yellow-500"
+                  aria-label="2 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-11"
+                  class="mask mask-star-2 mask-half-1 bg-yellow-500"
+                  aria-label="2.5 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-13"
+                  class="mask mask-star-2 mask-half-2 bg-yellow-500"
+                  aria-label="3 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-13"
+                  class="mask mask-star-2 mask-half-1 bg-yellow-500"
+                  aria-label="3.5 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-13"
+                  class="mask mask-star-2 mask-half-2 bg-yellow-500"
+                  aria-label="4 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-13"
+                  class="mask mask-star-2 mask-half-1 bg-yellow-500"
+                  aria-label="4.5 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-13"
+                  class="mask mask-star-2 mask-half-2 bg-yellow-500"
+                  aria-label="5 star"
+                />
+              </div>
+            </div>
+            <button class="btn btn-ghost">Details</button>
+          </div>
+          <!-- card 4 -->
+          <div
+            class="border-2 border-gray-300 rounded-2xl flex flex-col space-y-4 items-center justify-center px-4 py-6"
+          >
+            <img src="./images/fruit9.png" alt="" />
+            <h6 class="font-bold text-2xl">12.90$ - 18.85$</h6>
+            <div class="divider w-3/4 mx-auto"></div>
+            <p class="text-base font-medium text-[#12121299]">Banana</p>
+            <!-- ratting -->
+            <div>
+              <div class="rating rating-lg rating-half">
+                <input type="radio" name="rating-11" class="rating-hidden" />
+                <input
+                  type="radio"
+                  name="rating-14"
+                  class="mask mask-star-2 mask-half-1 bg-yellow-500"
+                  aria-label="0.5 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-14"
+                  class="mask mask-star-2 mask-half-2 bg-yellow-500"
+                  aria-label="1 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-14"
+                  class="mask mask-star-2 mask-half-1 bg-yellow-500"
+                  aria-label="1.5 star"
+                  checked="checked"
+                />
+                <input
+                  type="radio"
+                  name="rating-14"
+                  class="mask mask-star-2 mask-half-2 bg-yellow-500"
+                  aria-label="2 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-14"
+                  class="mask mask-star-2 mask-half-1 bg-yellow-500"
+                  aria-label="2.5 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-14"
+                  class="mask mask-star-2 mask-half-2 bg-yellow-500"
+                  aria-label="3 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-14"
+                  class="mask mask-star-2 mask-half-1 bg-yellow-500"
+                  aria-label="3.5 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-14"
+                  class="mask mask-star-2 mask-half-2 bg-yellow-500"
+                  aria-label="4 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-14"
+                  class="mask mask-star-2 mask-half-1 bg-yellow-500"
+                  aria-label="4.5 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-14"
+                  class="mask mask-star-2 mask-half-2 bg-yellow-500"
+                  aria-label="5 star"
+                />
+              </div>
+            </div>
+            <button class="btn btn-ghost">Details</button>
+          </div>
+        </div>
+      </section>
+      <!-- Meet the team section start -->
+      <section class="py-40">
+        <div
+          class="container px-8 lg:px-24 mx-auto bg-[linear-gradient(45deg,rgba(0,0,0,0.7),rgba(0,0,0,0.5)),url(./images/banner3.png)] h-[60vh] bg-center bg-cover flex flex-col justify-center items-center rounded-lg"
+        >
+          <!-- meet header -->
+          <div class="text-white text-center space-y-3 pt-10">
+            <h2 class="text-5xl font-bold">Meet the team</h2>
+            <p class="text-base font-base w-3/5 mx-auto opacity-70">
+              Contrary to popular belief, is not simply random text. It has
+              roots in a piece of classical Latin literature from 45 BC, making
+              it over 2000 years old.
+            </p>
+          </div>
+          <!-- meet grid card -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-items-center pt-8 gap-18"
+          >
+            <!-- card 1 -->
+            <div class="text-center text-white space-y-3">
+              <img class="mx-auto" src="./images/member1.png" alt="" />
+              <h3 class="text-2xl font-bold">Awlad Hossain</h3>
+              <p>Fruits Expert</p>
+              <div class="flex justify-center items-center gap-2">
+                <img src="./images/facebook.png" alt="" />
+                <img src="./images/linkedin.png" alt="" />
+                <img src="./images/twitter .png" alt="" />
+              </div>
+            </div>
+            <!-- card 2 -->
+            <div class="text-center text-white space-y-3">
+              <img class="mx-auto" src="./images/member2.png" alt="" />
+              <h3 class="text-2xl font-bold">Safia Chowdhury</h3>
+              <p>Fruits Expert</p>
+              <div class="flex justify-center items-center gap-2">
+                <img src="./images/facebook.png" alt="" />
+                <img src="./images/linkedin.png" alt="" />
+                <img src="./images/twitter .png" alt="" />
+              </div>
+            </div>
+            <!-- card 3 -->
+            <div class="text-center text-white space-y-3">
+              <img class="mx-auto" src="./images/member3.png" alt="" />
+              <h3 class="text-2xl font-bold">Rokib Hossain</h3>
+              <p>Fruits Expert</p>
+              <div class="flex justify-center items-center gap-2">
+                <img src="./images/facebook.png" alt="" />
+                <img src="./images/linkedin.png" alt="" />
+                <img src="./images/twitter .png" alt="" />
+              </div>
+            </div>
+            <!-- card 4 -->
+            <div class="text-center text-white space-y-3">
+              <img class="mx-auto" src="./images/member4.png" alt="" />
+              <h3 class="text-2xl font-bold">Chaity</h3>
+              <p>Fruits Expert</p>
+              <div class="flex justify-center items-center gap-2">
+                <img src="./images/facebook.png" alt="" />
+                <img src="./images/linkedin.png" alt="" />
+                <img src="./images/twitter .png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Meet the team section end -->
+      <!-- Why choose us section start -->
+      <section class="my-24">
+        <div class="container px-8 lg:px-24 mx-auto">
+          <!-- header section -->
+          <div class="text-center space-y-4">
+            <h3 class="text-center text-5xl font-bold">Why Choose Us</h3>
+            <p class="text-base font-medium opacity-70 w-3/5 mx-auto">
+              Contrary to popular belief, is not simply random text. It has
+              roots in a piece of classical Latin literature from 45 BC, making
+              it over 2000 years old.
+            </p>
+          </div>
+          <!-- grid why choose -->
+        </div>
+      </section>
+      <!-- Why choose us section end -->
+    </main>
     <!-- footer section -->
     <footer></footer>
   </body>
